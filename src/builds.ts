@@ -125,6 +125,12 @@ export interface ProjectBuildOptions {
     compile?: boolean
   };
 
+  /** Options for processing TypeScript. */
+  ts?: {
+    /** Use downpile of target = ES5. */
+    es5?: boolean
+  };
+
   /**
    * Capabilities required for a browser to consume this build. Values include
    * `es2015` and `push`. See canonical list at:
